@@ -21,7 +21,9 @@ MSFconsole is a powerful, interactive command line environment to interface with
 
 Head to your "msf" prompt and type "show".  You'll see a long list of available modules broken out by categories: Encoders, NOP (No OPeration) Generators, Exploits, Payloads, Auxiliary, and Post.  Take some time and look through this list and get familiar with what's available, as this will help you utilize msfconsole to its full extent.
 
-In order to access these modules, you must "use" them...literally entering "use" on the command line and selecting a module, such as: 'use scanner/smtp/smtp_version' (banner grabs from available SMTP services).  The msf command line will change to reflect the module in current use.  Entering "show options" will show options that the user can configure.  In this particular case, we specify the target hosts (RHOSTS / Remote Hosts), with the remote port defaulted to SMTP's common port 25 and threads defaulted to 1.  Once these options are set, typing "run" will launch the scan.  (The equivalent "run" command when working with an exploit is "exploit.")
+In order to access these modules, you must "use" them...literally entering "use" on the command line and selecting a module, such as: 'use scanner/smtp/smtp_version' (banner grabs from available SMTP services).  The msf command line will change to reflect the module currently in use.  Entering "show options" will show options that the user can configure by entering "set" followed by the option name: "set RHOSTS".  In this particular case, we specify the target hosts (RHOSTS / Remote Hosts) using "set RHOSTS 192.168.1.1-150.  The remote port (RPORT) is defaulted to SMTP's common port 25 and threads is defaulted to 1.  Once these options are set, typing "run" will launch the scan.  (The equivalent "run" command when working with an exploit is "exploit.")
+
+[[[msf 'use' screenshot]]]
 
 
 
