@@ -1,3 +1,5 @@
+****UNDER CONSTRUCTION****
+
 The Metasploit Framework (MSF) is a dynamic, extensible penetration testing platform, offering an array of tools and exploits for testing against target systems.  These tools offer capabilities ranging from custom exploit preparation to exploit deployment.  But Metasploit isn't just a collection of tools and exploits, it's a full operational environment and foundation that one can greatly expand.  (It also comes in several editions: Community, Express and Pro.)
 
 Quick note: you'll have a lot more fun if you set up a test environment (including target machines / services) for testing Metasploit; see this page for more information 
@@ -19,7 +21,7 @@ MSFconsole is a powerful, interactive command line environment to interface with
 
 Head to your "msf" prompt and type "show".  You'll see a long list of available modules broken out by categories: Encoders, NOP (No OPeration) Generators, Exploits, Payloads, Auxiliary, and Post.  Take some time and look through this list and get familiar with what's available, as this will help you utilize msfconsole to its full extent.
 
-
+In order to access these modules, you must "use" them...literally entering "use" on the command line and selecting a module, such as: 'use scanner/smtp/smtp_version' (banner grabs from available SMTP services).  The msf command line will change to reflect the module in current use.  Entering "show options" will show options that the user can configure.  In this particular case, we specify the target hosts (RHOSTS / Remote Hosts), with the remote port defaulted to SMTP's common port 25 and threads defaulted to 1.  Once these options are set, typing "run" will launch the scan.  (The equivalent "run" command when working with an exploit is "exploit.")
 
 
 
