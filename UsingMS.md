@@ -7,7 +7,7 @@ Let's get started...
 
 Knowing the available Framework interfaces is key to understanding the variety of tools available to you and honing a strategy to use these.  For the sake of keeping it initially simple, we'll focus on some of the core interfaces: msfconsole, msfcli, msfweb, msfgui, msfencode...Metasploit consists of much more than these (more on that later).  Note that all following examples are demonstrated on a Linux platform, and we're assuming you've already installed the Framework.
 
-A word of wisdom: Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat. -Sun Tzu
+Sagely wisdom: Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat. -Sun Tzu
 
 --------------------
 Let's start with msfconsole...msf >
@@ -21,7 +21,7 @@ Head to your "msf" prompt and type "show".  You'll see a long list of available 
 
 
 
-updating msfconsole = 'svn update'
+
 
 msf > help
 Core Commands
@@ -44,7 +44,7 @@ Core Commands
     load          Load a framework plugin
     loadpath      Searches for and loads modules from a path
     makerc        Save commands entered since start to a file
-    popm          Pops the latest module off of the module stack and makes it 				active
+    popm          Pops the latest module off of the module stack and makes it active
     previous      Sets the previously loaded module as the current module
     pushm         Pushes the active or list of modules onto the module stack
     quit          Exit the console
@@ -65,6 +65,7 @@ Core Commands
     unsetg        Unsets one or more global variables
     use           Selects a module by name
     version       Show the framework and console library version numbers
+NOTE: To update msf, enter "svn update" at the msf prompt.
 
 
 
