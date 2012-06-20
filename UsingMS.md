@@ -7,15 +7,17 @@ Let's get started...
 
 Knowing the available Framework interfaces is key to understanding the variety of tools available to you and honing a strategy to use these.  For the sake of keeping it initially simple, we'll focus on some of the core interfaces: msfconsole, msfcli, msfweb, msfgui, msfencode...Metasploit consists of much more than these (more on that later).  Note that all following examples are demonstrated on a Linux platform, and we're assuming you've already installed the Framework.
 
---------------------
-Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat. -Sun Tzu
---------------------
+A word of wisdom: Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat. -Sun Tzu
 
+--------------------
 Let's start with msfconsole...msf >
+--------------------
 
-[[[MSFCONSOLE SCREENSHOT]]]]
+[[[MSFCONSOLE SCREENSHOT]]]
 
 MSFconsole is a powerful, interactive command line environment to interface with the Framework.  It provides the widest and speediest access to many of the Framework's capabilities, so it's a great interface to learn.  To launch MSFconsole, simply open a command line window and enter 'msfconsole'.  You'll see the image above.  From the "msf >" prompt, you can enter 'help' or '?' at any time to get assistance (see "Core Commands" list further below for an overview of these.)
+
+Head to your "msf" prompt and type "show".  You'll see a long list of available modules broken out by categories: Encoders, NOP (No OPeration) Generators, Exploits, Payloads, Auxiliary, and Post.  Take some time and look through this list and get familiar with what's available, as this will help you utilize msfconsole to its full extent.
 
 
 
@@ -42,7 +44,7 @@ Core Commands
     load          Load a framework plugin
     loadpath      Searches for and loads modules from a path
     makerc        Save commands entered since start to a file
-    popm          Pops the latest module off of the module stack and makes it active
+    popm          Pops the latest module off of the module stack and makes it 				active
     previous      Sets the previously loaded module as the current module
     pushm         Pushes the active or list of modules onto the module stack
     quit          Exit the console
@@ -65,6 +67,8 @@ Core Commands
     version       Show the framework and console library version numbers
 
 
+
+OLD CONTENT:
 ------------------------------------------------------------
 ------------------------------------------------------------
 Start here:
